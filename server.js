@@ -1,24 +1,24 @@
 const axios= require('axios');
 
-var argv = require('yargs')
-  .option({
-    t1:{
-    demand:true,
-    alias: 'team 1',
-    describe: 'choose 1st teams',
-    choices: ['xs', 's', 'm', 'l', 'xl']
-  },
-    t2:{
-      demand: true,
-      alias: 'team 2',
-      describe: 'choose second team',
-      choices: ['xs', 's', 'm', 'l', 'xl']
-    }
-  }).help()
-  .alias('help','h')
-  .argv;
-
-console.log(argv.t2);
+// var argv = require('yargs')
+//   .option({
+//     t1:{
+//     demand:true,
+//     alias: 'team 1',
+//     describe: 'choose 1st teams',
+//     choices: ['xs', 's', 'm', 'l', 'xl']
+//   },
+//     t2:{
+//       demand: true,
+//       alias: 'team 2',
+//       describe: 'choose second team',
+//       choices: ['xs', 's', 'm', 'l', 'xl']
+//     }
+//   }).help()
+//   .alias('help','h')
+//   .argv;
+//
+// console.log(argv.t2);
 
 var idURL= `https://cricapi.com/api/matches?apikey=1H7fCFQLz3VjfPWGdkKCDKH8y9j2`;
 
